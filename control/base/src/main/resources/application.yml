@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  context-path: /control
+# 数据源配置
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/bos
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+logging:
+  level: debug
